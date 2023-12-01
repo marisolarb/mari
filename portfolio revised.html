@@ -181,6 +181,36 @@
 
   </div>
 
+  <form>
+    <label for="username">Username</label>
+    <input id="username" type="text" name="username"> <br>
+    <br>
+    <label for="password">Password</label>
+    <input id="password" type="text" name="password"><br>
+    <br>
+    <button type="button" id="submitBtn">Submit</button>
+  </form>
+
+  <script>
+    function validateForm() {
+      const username = document.getElementById("username");
+      const password = document.getElementById("password");
+
+      if (username?.value === "" && password?.value === "") {
+        alert("Username and password cannot be empty");
+      } else if (username?.value === "") {
+        alert("Username cannot be empty");
+      } else if (password?.value === "") {
+        alert("Password cannot be empty");
+      } else {
+        setTimeout(alert("Successfully submitted!", 3000));
+      }
+    }
+
+    const submitBtn = document.getElementById("submitBtn");
+    submitBtn.addEventListener("click", validateForm);
+  </script>
+
   <script>
     function displayText() {
       const paragraph = document.getElementById("displayText");
@@ -191,6 +221,9 @@
     button.addEventListener('click', displayText);
 
   </script>
+
+
+
 
 </body>
 
