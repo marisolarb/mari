@@ -17,23 +17,27 @@
             margin-right: 05px;
             /* Add spacing between images */
         }
-    </style>
-    <title>Scaling an Image Smaller</title>
-    <style>
-        /* CSS for scaling the image smaller */
+
         .small-image {
             width: 10%;
             /* Adjust the width as needed */
             height: auto;
-            /* Maintain the aspect ratio */}
+            /* Maintain the aspect ratio */
+        }
+
+        .circular-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
     </style>
-  
+
 </head>
 
 <body>
     <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">The Foodie</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#" style="color: white;">The Foodie</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,20 +45,26 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#" style="color: white;">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
+                    <a class="nav-link" href="./NEWCONTACTPAGECSMISTERM.html">Contact</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="./restaurants.html">Restaurants</a>
+                    <a class="nav-link" href="./NEWRESTAURANTSPAGECSMIDTERM.html" style="color: white;">Restaurants</a>
                 </li>
             </ul>
         </div>
     </nav>
-<img src="https://img.freepik.com/premium-photo/food-background-pasta-chicken-pumpkin-salad-meat-mushrooms-vegetables-black-stone-background-top-view-free-space-text_187166-31381.jpg" alt="food" width="1448" height="300">
+
+<div style="display: flex; justify-content: space-evenly;">
+    <img class="circular-img" src="logoo.png" alt="logo" />
+    <img class="circular-img" src="spooo.jpg" alt="fork" />
+    <img class="circular-img" src="foood.jpg" alt="food" />
+</div>
+
     <div style="padding: 25px;">
-        <h1 style="color:blue; background-color: rgb(255, 234, 0);"> The Foodie </h1>
+        <h1 style="color:rgb(255, 255, 255); background-color: rgb(18, 127, 169);"> The Foodie </h1>
         <h3>Developed by Jacob Boden, Aisha Awad, Jennifer Avila, and Rachel Caladas</h3>
         <p>The Foodie is a wesbite designed mainly for students and faculty at NJIT. <br>
             Its purpose is to provide an array of good restaurants in the area so that students and faculty <br>
@@ -75,7 +85,7 @@
             <body>
         </div>
         <div>
-            <h2>Information</h2>
+            <h2>Sign Up</h2>
             <label for="fname">First Name</label><br>
             <input type="text" placeholder="First Name" name="fname"> <br><br>
 
